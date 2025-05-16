@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">bmi_calc_with_kotlin</string>
+    <string name="weight_kg">Waga (kg)</string>
+    <string name="height_cm">Wzrost (cm)</string>
+    <string name="calculate_bmi">Oblicz BMI</string>
+    <string name="result">Wynik</string>
+    <string name="age">Wiek</string>
+    <string name="calculate">Oblicz</string>
+    <string name="recommended_recipe_placeholder">Tutaj pojawią się rekomendowane przepisy</string>
+    <string name="hip_circumference_cm">Obwód bioder (cm)</string>
+    <string name="waist_circumference_cm">Obwód talii (cm)</string>
+    <string name="item">Produkt</string>
+    <string name="appbar_scrolling_view_behavior">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="item_name">Nazwa produktu</string>
+    <string name="_1_pcs">1 pcs</string>
+    <string name="shopping_list_desc">Lista zakupów</string>
+    <string name="recipe_item_description">Składnik przepisu z nazwą i szczegółami\n</string>
+    <string-array name="activity_levels">
+        <item>Niska</item>
+        <item>Umiarkowana</item>
+        <item>Wysoka</item>
+    </string-array>
+</resources>

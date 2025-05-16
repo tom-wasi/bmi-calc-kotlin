@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Sałatka z tuńczykiem",
+    "calories": 350,
+    "type": "low",
+    "ingredients": ["sałata", "tuńczyk", "kukurydza", "oliwa"]
+  },
+  {
+    "name": "Zupa krem z brokułów",
+    "calories": 400,
+    "type": "low",
+    "ingredients": ["brokuły", "ziemniaki", "bulion warzywny"]
+  },
+  {
+    "name": "Kurczak z ryżem i warzywami",
+    "calories": 600,
+    "type": "medium",
+    "ingredients": ["pierś z kurczaka", "ryż", "brokuły"]
+  },
+  {
+    "name": "Omlet z warzywami",
+    "calories": 500,
+    "type": "medium",
+    "ingredients": ["jajka", "papryka", "cebula", "ser"]
+  },
+  {
+    "name": "Makaron z mięsem mielonym",
+    "calories": 850,
+    "type": "high",
+    "ingredients": ["makaron", "mięso mielone", "sos pomidorowy"]
+  },
+  {
+    "name": "Gulasz wołowy z kaszą",
+    "calories": 900,
+    "type": "high",
+    "ingredients": ["wołowina", "kasza gryczana", "cebula", "papryka"]
+  }
+]
