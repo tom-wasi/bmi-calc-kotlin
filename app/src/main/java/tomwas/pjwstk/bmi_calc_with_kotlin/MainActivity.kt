@@ -5,7 +5,6 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
-import androidx.appcompat.view.menu.MenuBuilder
 import androidx.appcompat.widget.Toolbar
 import androidx.core.view.MenuCompat
 import androidx.viewpager2.widget.ViewPager2
@@ -38,10 +37,9 @@ class MainActivity : AppCompatActivity() {
             tab.text = when (position) {
                 0 -> "BMI"
                 1 -> "WHR"
-                2 -> "Calories"
+                2 -> "Calorie"
                 3 -> "Recipes"
-                4 -> "Shopping"
-                5 -> "Chart"
+                4 -> "Chart"
                 else -> "BMI"
             }
         }.attach()

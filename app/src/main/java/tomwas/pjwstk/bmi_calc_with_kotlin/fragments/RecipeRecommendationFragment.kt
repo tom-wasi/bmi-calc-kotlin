@@ -6,7 +6,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.viewpager2.widget.ViewPager2
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import tomwas.pjwstk.bmi_calc_with_kotlin.R
@@ -36,12 +35,10 @@ class RecipeRecommendationFragment : Fragment() {
 
         viewModel.calories.observe(viewLifecycleOwner) { userCalories ->
             val recommended = getRecommendedRecipes(userCalories)
+            recyclerView.adapter = RecipeAdapter(recommended)
 
-            recyclerView.adapter = RecipeAdapter(recommended) { selectedRecipe ->
-                viewModel.setIngredients(selectedRecipe.ingredients)
-                val viewPager = requireActivity().findViewById<ViewPager2>(R.id.viewPager)
-                viewPager.currentItem = 5  // or the correct tab index for shopping list
-            }
+            val allIngredients = recommended.flatMap { it.ingredients }.distinct()
+            viewModel.setIngredients(allIngredients)
         }
 
         return view

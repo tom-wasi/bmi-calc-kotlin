@@ -7,11 +7,10 @@ import tomwas.pjwstk.bmi_calc_with_kotlin.fragments.BMICalculatorFragment
 import tomwas.pjwstk.bmi_calc_with_kotlin.fragments.BMIChartFragment
 import tomwas.pjwstk.bmi_calc_with_kotlin.fragments.CalorieCalculatorFragment
 import tomwas.pjwstk.bmi_calc_with_kotlin.fragments.RecipeFragment
-import tomwas.pjwstk.bmi_calc_with_kotlin.fragments.ShoppingListFragment
 import tomwas.pjwstk.bmi_calc_with_kotlin.fragments.WHRCalculatorFragment
 
 class ViewPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activity) {
-    override fun getItemCount(): Int = 6
+    override fun getItemCount(): Int = 5
 
     override fun createFragment(position: Int): Fragment {
         return when (position) {
@@ -19,8 +18,7 @@ class ViewPagerAdapter(activity: FragmentActivity) : FragmentStateAdapter(activi
             1 -> WHRCalculatorFragment()
             2 -> CalorieCalculatorFragment()
             3 -> RecipeFragment()
-            4 -> ShoppingListFragment()
-            5 -> BMIChartFragment()
+            4 -> BMIChartFragment()
             else -> BMICalculatorFragment()
         }
     }

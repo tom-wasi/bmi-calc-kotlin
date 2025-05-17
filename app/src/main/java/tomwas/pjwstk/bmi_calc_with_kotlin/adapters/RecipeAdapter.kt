@@ -1,6 +1,5 @@
 package tomwas.pjwstk.bmi_calc_with_kotlin.adapters
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,14 +9,14 @@ import tomwas.pjwstk.bmi_calc_with_kotlin.R
 import tomwas.pjwstk.bmi_calc_with_kotlin.Recipe
 
 class RecipeAdapter(
-    private val recipes: List<Recipe>,
-    private val onRecipeClick: (Recipe) -> Unit
+    private val recipes: List<Recipe>
 ) : RecyclerView.Adapter<RecipeAdapter.RecipeViewHolder>() {
 
     inner class RecipeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val title = itemView.findViewById<TextView>(R.id.recipeTitle)
-        val calories = itemView.findViewById<TextView>(R.id.recipeCalories)
-        val ingredients = itemView.findViewById<TextView>(R.id.recipeIngredients)
+        val title: TextView = itemView.findViewById(R.id.recipeTitle)
+        val calories: TextView = itemView.findViewById(R.id.recipeCalories)
+        val ingredients: TextView = itemView.findViewById(R.id.recipeIngredients)
+        val steps: TextView = itemView.findViewById(R.id.recipeSteps)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecipeViewHolder {
@@ -30,12 +29,8 @@ class RecipeAdapter(
         val recipe = recipes[position]
         holder.title.text = recipe.name
         holder.calories.text = "${recipe.calories} kcal"
-        holder.ingredients.text = recipe.ingredients.joinToString(", ")
-
-        holder.itemView.setOnClickListener {
-            Log.d("RecipeAdapter", "Clicked: ${recipes[position].name}")
-            onRecipeClick(recipes[position])
-        }
+        holder.ingredients.text = "Składniki: ${recipe.ingredients.joinToString(", ")}"
+        holder.steps.text = "Kroki: ${recipe.steps.joinToString("\n")}"
     }
 
     override fun getItemCount(): Int = recipes.size

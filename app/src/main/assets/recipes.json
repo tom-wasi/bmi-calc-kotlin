@@ -3,36 +3,66 @@
     "name": "Sałatka z tuńczykiem",
     "calories": 350,
     "type": "low",
-    "ingredients": ["sałata", "tuńczyk", "kukurydza", "oliwa"]
+    "ingredients": ["sałata", "tuńczyk", "kukurydza", "oliwa"],
+    "steps": [
+      "Umyj i porwij sałatę.",
+      "Dodaj tuńczyka i kukurydzę.",
+      "Skrop oliwą i wymieszaj."
+    ]
   },
   {
     "name": "Zupa krem z brokułów",
     "calories": 400,
     "type": "low",
-    "ingredients": ["brokuły", "ziemniaki", "bulion warzywny"]
+    "ingredients": ["brokuły", "ziemniaki", "bulion warzywny"],
+    "steps": [
+      "Ugotuj brokuły i ziemniaki w bulionie.",
+      "Zblenduj na krem.",
+      "Dopraw do smaku."
+    ]
   },
   {
     "name": "Kurczak z ryżem i warzywami",
     "calories": 600,
     "type": "medium",
-    "ingredients": ["pierś z kurczaka", "ryż", "brokuły"]
+    "ingredients": ["pierś z kurczaka", "ryż", "brokuły"],
+    "steps": [
+      "Ugotuj ryż.",
+      "Podsmaż kurczaka i dodaj brokuły.",
+      "Połącz wszystko razem i podgrzej."
+    ]
   },
   {
     "name": "Omlet z warzywami",
     "calories": 500,
     "type": "medium",
-    "ingredients": ["jajka", "papryka", "cebula", "ser"]
+    "ingredients": ["jajka", "papryka", "cebula", "ser"],
+    "steps": [
+      "Rozbij jajka i wymieszaj.",
+      "Dodaj pokrojone warzywa i ser.",
+      "Smaż na patelni do zarumienienia."
+    ]
   },
   {
     "name": "Makaron z mięsem mielonym",
     "calories": 850,
     "type": "high",
-    "ingredients": ["makaron", "mięso mielone", "sos pomidorowy"]
+    "ingredients": ["makaron", "mięso mielone", "sos pomidorowy"],
+    "steps": [
+      "Ugotuj makaron.",
+      "Podsmaż mięso mielone.",
+      "Dodaj sos pomidorowy i wymieszaj z makaronem."
+    ]
   },
   {
     "name": "Gulasz wołowy z kaszą",
     "calories": 900,
     "type": "high",
-    "ingredients": ["wołowina", "kasza gryczana", "cebula", "papryka"]
+    "ingredients": ["wołowina", "kasza gryczana", "cebula", "papryka"],
+    "steps": [
+      "Podsmaż wołowinę z cebulą.",
+      "Dodaj paprykę i duś wszystko razem.",
+      "Podawaj z ugotowaną kaszą gryczaną."
+    ]
   }
 ]

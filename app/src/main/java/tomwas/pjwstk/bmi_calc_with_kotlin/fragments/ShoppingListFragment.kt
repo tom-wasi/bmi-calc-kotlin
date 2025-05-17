@@ -1,5 +1,6 @@
 package tomwas.pjwstk.bmi_calc_with_kotlin.fragments
 
+import ShoppingListAdapter
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -9,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView
 import tomwas.pjwstk.bmi_calc_with_kotlin.R
 import tomwas.pjwstk.bmi_calc_with_kotlin.SharedViewModel
 import tomwas.pjwstk.bmi_calc_with_kotlin.ShoppingItem
-import tomwas.pjwstk.bmi_calc_with_kotlin.adapters.ShoppingListAdapter
 
 class ShoppingListFragment : Fragment() {
 
@@ -25,9 +25,7 @@ class ShoppingListFragment : Fragment() {
         recyclerView = view.findViewById(R.id.shoppingRecyclerView)
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        adapter = ShoppingListAdapter(shoppingItems) { item, isChecked ->
-            item.isChecked = isChecked
-        }
+        adapter = ShoppingListAdapter(shoppingItems)
         recyclerView.adapter = adapter
 
         observeIngredientsFromViewModel()
